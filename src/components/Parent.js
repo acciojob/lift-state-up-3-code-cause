@@ -1,26 +1,20 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import ChildComponent1 from "./ChildComponent1";
-
 import ChildComponent2 from "./ChildComponent2";
 
+const Parent = () => {
+  const [selectedOption, setSelectedOption] = useState('');
 
+  return (
+    <div className="Parent" style={{ backgroundColor: "red", padding: "20px" }}>
+      <h1>Parent Component</h1>
 
-const Parent=()=>{
+      <ChildComponent1 onSelect={setSelectedOption} />
+      <ChildComponent2 onSelect={setSelectedOption} />
 
-    const [selectedOption, Setselectedoption]= useState('');
+      <p>Selected Option: {selectedOption}</p>
+    </div>
+  );
+};
 
-    return(
-        <div className="Parent" style={{backgroundColor:"red"}}>
-
-         <h1>Parent Component</h1>
-         <ChildComponent1 props={Setselectedoption} />
-
-         <ChildComponent2 props={Setselectedoption} />
- 
-         
-         <p>Selected Option: {selectedOption}</p>
-
-        </div>
-    )
-}
 export default Parent;
