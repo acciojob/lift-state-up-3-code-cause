@@ -18,7 +18,7 @@ const Parent=()=>{
          <ChildComponent2 props={Setselectedoption} />
  
          
-         <p>Selected option:{selectedOption}</p>
+         <p>Selected Option: {selectedOption}</p>
 
         </div>
     )
