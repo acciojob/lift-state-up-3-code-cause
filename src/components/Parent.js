@@ -6,7 +6,7 @@ const App = () => {
   const [selectedOption, setSelectedOption] = useState('');
 
   return (
-    <div className="Parent" style={{ backgroundColor: "red", padding: "20px" }}>
+    <div className="parent" style={{ backgroundColor: "red", padding: "20px" }}>
       <h1>Parent Component</h1>
 
       <ChildComponent1 onSelect={setSelectedOption} />
