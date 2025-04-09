@@ -10,7 +10,7 @@ const Parent=()=>{
     const [selectedOption, Setselectedoption]= useState('');
 
     return(
-        <div style={{backgroundColor:"red"}}>
+        <div className="Parent" style={{backgroundColor:"red"}}>
 
          <h1>Parent Component</h1>
          <ChildComponent1 props={Setselectedoption} />
